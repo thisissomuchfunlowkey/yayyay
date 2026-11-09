@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NAVBAR */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  border-bottom: 1px solid #bbb;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  width: 1150px;
+  margin: auto;
+  align-items: center;
+  height: 80px;
+}
+
+.nav-brand {
+  font-family: 'Nunito', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  color: #f7b500;
+}
+
+.nav-menu li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.nav-menu li a {
+  color: black;
+  font-weight: 600;
+}
+
+.nav-menu li a:hover {
+  color: crimson;
+}
+
+.button-r {
+  background-color: #0d47a1;
+  color: white !important;
+  padding: 14px 17px;
+  border-radius: 20px;
+}
+
+.button-r:hover {
+  background-color: crimson !important;
+  color: white;
+}
+
+/* MAIN / BANNER */
+main {
+  width: 1150px;
+  margin: auto;
+  padding: 20px 0;
+  display: flex;
+  height: calc(100vh - 80px);
+}
+
+.tagline {
+  margin-top: 50px;
+}
+
+.tagline .tag {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Nunito', sans-serif;
+  color: #0d47a1;
+  margin-bottom: 20px;
+}
+
+.tagline h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  color: #0d47a1;
+  margin-bottom: 30px;
+  line-height: 60px;
+}
+
+.tagline .deskripsi {
+  margin-bottom: 40px;
+  line-height: 20px;
+}
+
+.button-more {
+  background-color: crimson;
+  color: white;
+  padding: 14px 17px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.button-more:hover {
+  background-color: #0d47a1;
+}
+
+main img {
+  padding-right: 20px;
+}
+
+/* ABOUT SECTION */
+#about {
+  width: 1150px;
+  margin: auto;
+  display: flex;
+  padding: 80px 30px;
+}
+
+#about img {
+  height: 300px;
+  margin-right: 100px;
+}
+
+.title {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #f7b500;
+}
+
+.title-2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 40px;
+  color: #0d47a1;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.visi-misi p {
+  margin-bottom: 20px;
+}
+
+/* FASILITAS SECTION */
+#fasilitas {
+  width: 1150px;
+  margin: auto;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.galeri {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.galeri .card {
+  width: 30%;
+  margin: 15px 0;
+}
+
+.galeri .card img {
+  width: 80%;
+  height: 160px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.galeri .card p {
+  font-weight: 600;
+}
+
+/* KONTAK SECTION */
+#kontak {
+  width: 1150px;
+  margin: auto;
+  text-align: center;
+  padding: 40px 0;
+}
+
+#kontak .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+#kontak .row .map {
+  width: 45%;
+  height: 350px;
+  border: none;
+}
+
+#kontak .row .pesan {
+  width: 50%;
+  text-align: left;
+}
+
+.sandbox {
+  height: 40px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.sandbox input, 
+.sandbox textarea {
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+}
+
+.sandbox input {
+  height: 100%;
+}
+
+.sandbox.message {
+  height: 100px;
+}
+
+.sandbox textarea {
+  padding: 10px;
+  resize: none;
+  height: 100%;
+}
+
+.button-send {
+  background-color: crimson;
+  color: white;
+  padding: 14px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  font-size: 17px;
+}
+
+.button-send:hover {
+  background-color: #0d47a1;
+}
+
+/* FOOTER */
+footer {
+  background-color: #dedede;
+  padding: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.socials {
+  padding: 5px 0 15px 0;
+}
+
+.socials a {
+  margin: 0 10px;
+  font-size: 20px;
+  color: black;
+}
+
+.socials a:hover {
+  color: crimson;
+}
+
+.links {
+  margin-bottom: 15px;
+}
+
+.links a {
+  color: black;
+  padding: 0 15px;
+  font-weight: 500;
+}
+
+.links a:hover {
+  color: crimson;
+}
+
+.credit {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.credit a {
+  font-weight: 700;
+  color: black;
+}
+
+/* RESPONSIVE CSS (MOBILE VIEW) */
+@media screen and (max-width: 768px) {
+  .nav-content {
+    width: 100%;
+    display: block;
+    padding-left: 12px;
+    margin: auto;
+    height: 110px;
+  }
+
+  .nav-brand {
+    font-size: 45px;
+    margin-bottom: 10px;
+  }
+
+  .nav-menu {
+    padding-left: 4px;
+  }
+
+  .nav-menu li {
+    margin-left: 0;
+    margin-right: 30px;
+  }
+
+  .nav-menu li a {
+    font-size: 14px;
+  }
+
+  .button-r {
+    padding: 12px 15px;
+  }
+
+  main {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    height: auto;
+  }
+
+  .tagline {
+    padding-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .tagline .tag {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .tagline h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    line-height: 45px;
+  }
+
+  .tagline .deskripsi {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  .button-more {
+    font-size: 15px;
+    padding: 12px 15px;
+  }
+
+  main img {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  #about {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin-top: 80px;
+  }
+
+  #about img {
+    height: 200px;
+    margin: 0 auto 20px auto;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  .title-2 {
+    font-size: 40px;
+  }
+
+  .visi-misi p {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .visi-misi .button-more {
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 12px 15px;
+  }
+
+  #fasilitas {
+    width: 100%;
+    margin-top: 70px;
+    padding: 10px;
+  }
+
+  #fasilitas .title {
+    margin-bottom: 10px;
+  }
+
+  .galeri .card {
+    width: 50%;
+  }
+
+  .galeri .card img {
+    height: 100px;
+  }
+
+  .galeri .card p {
+    font-size: 15px;
+  }
+
+  #kontak {
+    width: 100%;
+    padding: 10px;
+    margin-top: 50px;
+  }
+
+  #kontak .title {
+    margin-bottom: 10px;
+  }
+
+  #kontak .row {
+    display: block;
+    width: 100%;
+  }
+
+  #kontak .row .map {
+    width: 100%;
+  }
+
+  #kontak .row .pesan {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .sandbox {
+    height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .sandbox input,
+  .sandbox textarea {
+    font-size: 15px;
+  }
+
+  .sandbox.message {
+    height: 100px;
+  }
+
+  .button-send {
+    font-size: 15px;
+    padding: 12px 20px;
+  }
+
+  .links a {
+    font-size: 15px;
+  }
+}
